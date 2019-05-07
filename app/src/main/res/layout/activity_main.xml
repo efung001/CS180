@@ -7,16 +7,21 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="261dp"
-        android:layout_height="61dp"
-        android:text="@string/app_name"
+        android:id="@+id/textView3"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/welcome"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253"
-        tools:text="@string/app_name" />
+        app:layout_constraintVertical_bias="0.202"
+        tools:text="@string/welcome" />
 
     <Button
         android:id="@+id/Log_Sign_Button"
@@ -37,30 +42,44 @@
         android:layout_width="332dp"
         android:layout_height="66dp"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="26dp"
         android:layout_marginBottom="333dp"
         android:text="Select a lot from the list to see how many spots are available"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.309" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="456dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="227dp"
-        android:text="Submit"
+    <Spinner
+        android:id="@+id/lot_spinner"
+        android:layout_width="336dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/guest_lot_info_view"
+        android:layout_width="334dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="#00193529"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/lot_spinner"
+        app:layout_constraintVertical_bias="0.033" />
 
 </android.support.constraint.ConstraintLayout>
