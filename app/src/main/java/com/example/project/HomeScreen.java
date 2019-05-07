@@ -1,9 +1,12 @@
 package com.example.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,6 +23,7 @@ public class HomeScreen extends AppCompatActivity {
     private FirebaseUser user;
     private static final String TAG = "HomeScreen";
     private String name= "";
+    private Button update;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +35,6 @@ public class HomeScreen extends AppCompatActivity {
         DocumentReference docRef = db.collection("User_Information").document(uid);
 
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            //FIX = try to get stall thread so that OnComplete can run first
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
@@ -50,6 +53,16 @@ public class HomeScreen extends AppCompatActivity {
                 textView.setText("Hello "+ name + "!");
             }
         });
+
+        update=findViewById(R.id.UpdateOption);
+        update.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HomeScreen.this,EditUserActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
 
  /*       if (user != null) {
             for (UserInfo profile : user.getProviderData()) {
