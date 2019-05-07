@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46767998073",
+    "firebase_url": "https://security-database-e40d1.firebaseio.com",
+    "project_id": "security-database-e40d1",
+    "storage_bucket": "security-database-e40d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46767998073:android:6fddbf0bc1b4e2c3",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46767998073-rm2ush5ipge1v429n3hrf8nqkg0m0erp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWIQarAS85OMyRm85aB623ZuYR_usoADs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46767998073-rm2ush5ipge1v429n3hrf8nqkg0m0erp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
