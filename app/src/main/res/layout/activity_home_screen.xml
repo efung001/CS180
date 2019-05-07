@@ -6,11 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".HomeScreen">
 
+    <Button
+        android:id="@+id/UpdateOption"
+        android:layout_width="359dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="278dp"
+        android:text="Update Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/test_UID"
-        android:layout_width="395dp"
-        android:layout_height="154dp"
+        android:id="@+id/Greeting"
+        android:layout_width="231dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="533dp"
+        android:text="Hello "
+        android:textAlignment="center"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
