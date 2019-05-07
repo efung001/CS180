@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private Button LogSign,submit;
     private Spinner spinner;
-    private static final String[] paths = {"Big Springs Structure", "Lot 6", "LOT 24", "Lot 26", "Lot 30", "Lot 32"};
+    private static final String[] paths = {"Big Springs Structure", "Lot 6", "Lot 24", "Lot 26", "Lot 30", "Lot 32"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
