@@ -12,6 +12,7 @@
         <activity android:name=".UpdateForm"></activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".HomeScreen" />
+        <activity android:name=".EditUserActivity"/>
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />

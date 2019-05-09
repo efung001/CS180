@@ -78,7 +78,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
     private void helper(String UID){
         Map<String,Object> Data= new HashMap<>();
-        Data.put("First Name", "tester1");
+        Data.put("First Name", "");
         Data.put("Last Name", "");
         Data.put("Phone Number", "");
         Data.put("Monday", Arrays.asList("N/A"));

@@ -32,8 +32,9 @@ public class HomeScreen extends AppCompatActivity {
         String uid = user.getUid();
 
         super.onCreate(savedInstanceState);
-        DocumentReference docRef = db.collection("User_Information").document(uid);
-
+        setContentView(R.layout.activity_home_screen);
+        //------------------------------------------------------            This is the Hello [username] box
+        DocumentReference docRef = db.collection("User_Information").document(uid);             //Need to optimize to load faster
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -48,13 +49,13 @@ public class HomeScreen extends AppCompatActivity {
                 } else {
                     Log.d(TAG, "get failed with ", task.getException());
                 }
-                setContentView(R.layout.activity_home_screen);
                 TextView textView = (TextView) findViewById(R.id.Greeting);
                 textView.setText("Hello "+ name + "!");
             }
         });
-
-        update=findViewById(R.id.UpdateOption);
+        //----------------------------------------------------
+    //----------------------------------------------------      Implement this into HomeScreen
+        update = findViewById(R.id.UpdateOption);
         update.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -62,25 +63,6 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-
-
- /*       if (user != null) {
-            for (UserInfo profile : user.getProviderData()) {
-                // Id of the provider (ex: google.com)
-                String providerId = profile.getProviderId();
-
-                // UID specific to the provider
-                String uid = profile.getUid();                                  This might be useful for getting user info
-
-                // Name, email address, and profile photo Url
-                String name = profile.getDisplayName();
-                String email = profile.getEmail();
-                Uri photoUrl = profile.getPhotoUrl();
-            }
-        }
-*/
-        //--------------------------------------------------------------
-        //Add in UI functionality
-        //--------------------------------------------------------------
+     //-----------------------------------------------------     Implement this into HomeScreen
     }
 }
