@@ -54,7 +54,7 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
         //----------------------------------------------------
-    //----------------------------------------------------      Implement this into HomeScreen
+    //----------------------------------------------------      Update Information Button
         update = findViewById(R.id.UpdateOption);
         update.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -63,6 +63,6 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-     //-----------------------------------------------------     Implement this into HomeScreen
+     //--------------------------------------------------------------------
     }
 }
