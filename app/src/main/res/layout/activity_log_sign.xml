@@ -7,6 +7,7 @@
     tools:context=".LogSignActivity"
     android:background="@drawable/bg1">
 
+
     <Button
         android:id="@+id/LogIn"
         android:layout_width="wrap_content"
