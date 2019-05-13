@@ -81,11 +81,11 @@ public class SignUpActivity extends AppCompatActivity {
         Data.put("First Name", "");
         Data.put("Last Name", "");
         Data.put("Phone Number", "");
-        Data.put("Monday", Arrays.asList("N/A"));
-        Data.put("Tuesday", Arrays.asList("15:00-Chung"));
-        Data.put("Wednesday", Arrays.asList("N/A"));
-        Data.put("Thursday", Arrays.asList("N/A"));
-        Data.put("Friday", Arrays.asList("N/A"));
+        Data.put("Monday", Arrays.asList("CS183-Chung-15:00"));
+        Data.put("Tuesday", Arrays.asList());
+        Data.put("Wednesday", Arrays.asList());
+        Data.put("Thursday", Arrays.asList());
+        Data.put("Friday", Arrays.asList());
 
         db.collection("User_Information").document(UID)
                 .set(Data)

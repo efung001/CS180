@@ -2,21 +2,15 @@ package com.example.project;
 
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telecom.Call;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private Button LogSign,submit;
     private Spinner spinner;
-    private static final String[] paths = {"Big Springs Structure", "Lot 6", "LOT 24", "Lot 26", "Lot 30", "Lot 32"};
+    private static final String[] paths = {"Big Springs Structure", "Lot 6", "Lot 24", "Lot 26", "Lot 30", "Lot 32"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,21 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg1"
     tools:context=".HomeScreen">
 
+
     <Button
-        android:id="@+id/UpdateOption"
+        android:id="@+id/UpdatePersonalOption"
         android:layout_width="359dp"
         android:layout_height="65dp"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="26dp"
         android:layout_marginBottom="278dp"
-        android:text="Update Information"
+        android:text="@string/info_update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Greeting"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <Button
+        android:id="@+id/UpdateScheduleOption"
+        android:layout_width="359dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="316dp"
+        android:text="Update Schedule Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdatePersonalOption" />
 
     <TextView
         android:id="@+id/Greeting"
@@ -28,6 +47,7 @@
         android:layout_marginTop="143dp"
         android:layout_marginEnd="90dp"
         android:layout_marginBottom="533dp"
+        android:text="@string/hello_message"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
