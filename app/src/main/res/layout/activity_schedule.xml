@@ -36,13 +36,11 @@
             <TextView
                 android:id="@+id/test"
                 android:layout_column="1"
-                android:padding="3dip"
-                android:text="Open..." />
+                android:padding="3dip" />
 
             <TextView
                 android:gravity="right"
-                android:padding="3dip"
-                android:text="Ctrl-O" />
+                android:padding="3dip" />
         </TableRow>
 
         <TableRow>
